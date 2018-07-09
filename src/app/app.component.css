@@ -1,0 +1,21 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.padding {
+    float: right;
+}
+.top {
+    background: #301504;
+    color: khaki;
+}
+.list-group-item {
+    color: brown;
+}
+p{
+    padding: 1px;
+    border-bottom: 1px solid BLUE;
+}
+.line {
+    text-decoration: line-through;
+  }
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+  }
