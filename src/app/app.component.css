@@ -19,3 +19,6 @@ p{
 input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
   }
+.container-small {
+    width: 500px;
+}

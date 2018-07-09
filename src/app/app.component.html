@@ -1,5 +1,5 @@
   
-  <div class="container mt-5">
+  <div class="container container-small mt-5">
   <div class="row">
     <div class="col top">
         <h2 class="text-center my-5"> {{ name }}'s Todo List</h2>
@@ -19,12 +19,12 @@
       <!-- {{chore}} -->
 
           <!-- Edit -->
-          <i class="far fa-edit float-right p-1" (click) = "editTodo(chore)"></i>
+          <i class="far fa-edit p-1 " (click) = "editTodo(chore)"></i>
           <!-- Deletes Chore -->
-          <i class="far fa-trash-alt float-right p-1"(click) = "deleteTodo(chore)"></i>        
+          <i class="far fa-trash-alt p-1"(click) = "deleteTodo(chore)"></i>        
            <!-- Completed -->
-          <span class="float-right">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> 
+          <span class="">
+          <input class="form-check-input p-1" type="checkbox" value="" id="defaultCheck1"> 
           <label class="strikethrough">{{chore}}</label>
       </span>
  </p>
