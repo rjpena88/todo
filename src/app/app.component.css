@@ -1,9 +1,8 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .padding {
     float: right;
 }
-.top {
-    background: #301504;
+.todo-title {
+    background: #da7b41;
     color: khaki;
 }
 .list-group-item {
@@ -11,7 +10,7 @@
 }
 p{
     padding: 1px;
-    border-bottom: 1px solid BLUE;
+    border-bottom: 1px solid #6b4600;
 }
 .line {
     text-decoration: line-through;
@@ -19,6 +18,15 @@ p{
 input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
   }
-.container-small {
-    width: 500px;
+.todo-container {
+    width: 400px;
+}
+input{
+   text-align:center;
+}
+.box {
+    padding-left: 30px;
+}
+h2 {
+    font-family: 'Shrikhand', cursive;
 }

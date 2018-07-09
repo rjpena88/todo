@@ -1,33 +1,31 @@
-  
-  <div class="container container-small mt-5">
-  <div class="row">
-    <div class="col top">
-        <h2 class="text-center my-5"> {{ name }}'s Todo List</h2>
+<div class="container todo-container mt-3">
+    <div class="col">
+        <div class="todo-title">
+            <h2 class="text-center mb-0 pt-3">Todo List!</h2>
         </div>
-     
-  <!-- create Chore -->
-    <div class="col text-center top pt-3"> 
-      <input [(ngModel)]="todoInput">
-      <button class="btn btn-danger" (click)="createTodo()">
-      Click to see input</button>
-  </div>
- </div>
-      <!-- Chore  -->
-<div class="row border-bottom">
-      <div  class="container list-group-item list-group-item-warning test">
-  <p *ngFor="let chore of todos">
-      <!-- {{chore}} -->
 
-          <!-- Edit -->
-          <i class="far fa-edit p-1 " (click) = "editTodo(chore)"></i>
-          <!-- Deletes Chore -->
-          <i class="far fa-trash-alt p-1"(click) = "deleteTodo(chore)"></i>        
-           <!-- Completed -->
-          <span class="">
-          <input class="form-check-input p-1" type="checkbox" value="" id="defaultCheck1"> 
-          <label class="strikethrough">{{chore}}</label>
-      </span>
- </p>
- </div>
-</div>
+        <!-- create Chore -->
+        <div class="text-center todo-title py-3">
+            <input [(ngModel)]="todoInput" placeholder="What's to do? Type here." size="30">
+            <button class="btn btn-danger" (click)="createTodo()">Click to add to your todo list!</button>
+        </div>
+    </div>
+    <!-- Chore  -->
+    <div class="row border-bottom">
+        <div class="container list-group-item list-group-item-warning test">
+            <p *ngFor="let chore of todos">
+                <!-- {{chore}} -->
+
+                <!-- Edit -->
+                <i class="fas fa-pencil-alt" (click)="editTodo(chore)"></i>
+                <!-- Deletes Chore -->
+                <i class="far fa-trash-alt p-1" (click)="deleteTodo(chore)"></i>
+                <!-- Completed -->
+                <span class="box">
+                    <input class="form-check-input p-1" type="checkbox" value="" id="defaultCheck1">
+                    <label class="strikethrough">{{chore}}</label>
+                </span>
+            </p>
+        </div>
+    </div>
 </div>

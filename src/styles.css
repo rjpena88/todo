@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url(http://voicesofimani.com/wp-content/uploads/2018/03/wooden-desk-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /* You can add global styles to this file, and also import other style files */
